@@ -1,0 +1,729 @@
+FIRST_CODING_TEST
+
+1. reversed_string
+2. factorial
+3. longest_word
+4. sum_nums
+5. time_conversion
+
+6. count_vowels
+7. palindrome?
+8. nearby_az
+9. two_sum
+10. power_of_two?
+
+11. third_greatest
+12. most_common_letter
+13. dasherize
+14. scramble_string
+15. is_prime?
+
+16. nth_prime
+17. longest_palindrome
+18. greatest_common_factor
+19. caesar_cipher
+20. num_repeats
+
+
+SECOND_CODING_TEST
+
+21. nearest_larger 
+
+# Write a function, `nearest_larger(arr, i)` which takes an array and an
+# index.  The function should return another index, `j`: this should
+# satisfy:
+#
+# (a) `arr[i] < arr[j]`, AND
+# (b) there is no `j2` closer to `i` than `j` where `arr[i] < arr[j2]`.
+#
+# In case of ties (see example below), choose the earliest (left-most)
+# of the two indices. If no number in `arr` is larger than `arr[i]`,
+# return `nil`.
+
+
+22-23. no_repeats
+
+# Write a function, `no_repeats(year_start, year_end)`, which takes a
+# range of years and outputs those years which do not have any
+# repeated digits.
+#
+# You should probably write a helper function, `no_repeat?(year)` which
+# returns true/false if a single year doesn't have a repeat.
+
+
+24. letter_count(str)
+
+# Write a function, `letter_count(str)` that takes a string and
+# returns a hash mapping each letter to its frequency. Do not include
+# spaces.
+
+
+25-26. ordered_vowel_words(str)
+
+# Write a method, `ordered_vowel_words(str)` that takes a string of
+# lowercase words and returns a string with just the words containing
+# all their vowels (excluding "y") in alphabetical order. Vowels may
+# be repeated (`"afoot"` is an ordered vowel word).
+#
+# You will probably want a helper method, `ordered_vowel_word?(word)`
+# which returns true/false if a word's vowels are ordered.
+
+
+27. wonky_coins
+
+# Catsylvanian money is a strange thing: they have a coin for every
+# denomination (including zero!). A wonky change machine in
+# Catsylvania takes any coin of value N and returns 3 new coins,
+# valued at N/2, N/3 and N/4 (rounding down).
+#
+# Write a method `wonky_coins(n)` that returns the number of coins you
+# are left with if you take all non-zero coins and keep feeding them
+# back into the machine until you are left with only zero-value coins.
+
+
+28-29. morse_code
+
+# Build a function, `morse_encode(str)` that takes in a string (no
+# numbers or punctuation) and outputs the morse code for it. See
+# http://en.wikipedia.org/wiki/Morse_code. Put two spaces between
+# words and one space between letters.
+#
+# You'll have to type in morse code: I'd use a hash to map letters to
+# codes. Don't worry about numbers.
+#
+# I wrote a helper method `morse_encode_word(word)` that handled a
+# single word.
+
+
+30. word_unscrambler
+
+# Write a function word_unscrambler that takes two inputs: a scrambled
+# word and a dictionary of real words.  Your program must then output
+# all words that our scrambled word can unscramble to.
+#
+# Hint: To see if a string `s1` is an anagram of `s2`, split both
+# strings into arrays of letters. Sort the two arrays. If they are
+# equal, then they are anagrams.
+
+
+31. rectangle_intersection
+
+# Write a function, `rec_intersection(rect1, rect2)` and returns the
+# intersection of the two.
+#
+# Rectangles are represented as a pair of coordinate-pairs: the
+# bottom-left and top-right coordinates (given in `[x, y]` notation).
+#
+# Hint: You can calculate the left-most x coordinate of the
+# intersection by taking the maximum of the left-most x coordinate of
+# each rectangle. Likewise, you can calculate the top-most y
+# coordinate of the intersection by taking the minimum of the top most
+# y coordinate of each rectangle.
+
+32. bubble_sort
+
+33. temperature_convertor
+
+34 calculator that adds/subtracts/multiplies/divides
+
+
+**************PROJECT_EULER*************************
+
+35. three_five_mults
+#sum of multiples of 3 and 5 below 1000
+
+
+36. even_fibs
+#sum of even fibonacci numbers under 4 million
+
+
+37. prime_factor
+#The prime factors of 13195 are 5, 7, 13 and 29.
+#What is the largest prime factor of the number 600851475143 ?
+
+
+38. largest_pali_product
+
+#A palindromic number reads the same both ways. 
+#The largest palindrome made from the product of two 
+#2-digit numbers is 9009 = 91 × 99.
+#Find the largest palindrome made from the product
+#of two 3-digit numbers.
+
+
+39. smallest_mult
+#2520 is the smallest number that can be divided by each
+#of the numbers from 1 to 10 without any remainder.
+#What is the smallest positive number that is evenly
+#divisible by all of the numbers from 1 to 20?
+
+
+40. square_sum_diff
+#The sum of the squares of the first ten natural numbers is,
+#  12 + 22 + ... + 102 = 385
+#The square of the sum of the first ten natural numbers is,
+# (1 + 2 + ... + 10)2 = 552 = 3025
+#Hence the difference between the sum of the squares
+#of the first ten natural numbers and the square
+#of the sum is 3025 − 385 = 2640.
+
+#Find the difference between the sum of the squares of the
+#first one hundred natural numbers and the square of the sum.
+
+
+41. large_series_product
+#Find the thirteen adjacent digits in the 1000-digit 
+#number that have the greatest product and their product. 
+
+42. pythag_trip
+#A Pythagorean triplet is a set of three natural numbers,
+#a < b < c, for which, a2 + b2 = c2
+#For example, 32 + 42 = 9 + 16 = 25 = 52.
+
+#There exists exactly one Pythagorean triplet 
+#for which a + b + c = 1000.Find the product abc.
+
+
+43. sum_of_primes(under n)
+
+
+44. largest_grid_product
+#What is the greatest product of four adjacent numbers
+#in the same direction (up, down, left, right, or diagonally)
+#in the 20×20 grid?
+
+
+45-46. triangle_num_factors
+The sequence of triangle numbers is generated by adding
+the natural numbers. So the 7th triangle number would be
+ 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
+What is the value of the first triangle number 
+to have over five hundred divisors?
+
+
+47. longest_collatz_sequence
+The following iterative sequence is defined for the 
+set of positive integers:
+
+n → n/2 (n is even)
+n → 3n + 1 (n is odd)
+
+Using the rule above and starting with 13, 
+we generate the following sequence:
+
+13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+It can be seen that this sequence (starting at 13 and 
+finishing at 1) contains 10 terms. 
+
+Which starting number, under one million, 
+produces the longest chain?
+
+
+48. grid_routes
+
+Starting in the top left corner of a 2×2 grid, 
+and only being able to move to the right and down, 
+there are exactly 6 routes to the bottom right corner.
+
+How many in a 20x20 grid?
+
+
+49. sum of the digits of 2 ** n
+
+
+50. counting_sundays
+
+You are given the following information, but you may prefer to do some research for yourself.
+
+1 Jan 1900 was a Monday.
+Thirty days has September,
+April, June and November.
+All the rest have thirty-one,
+Saving February alone,
+Which has twenty-eight, rain or shine.
+And on leap years, twenty-nine.
+A leap year occurs on any year evenly divisible by 4, 
+but not on a century unless it is divisible by 400.
+How many Sundays fell on the first of the month 
+during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
+
+
+51. sum of factorial digits
+
+
+52. amicable_numbers
+Let d(n) be defined as the sum of proper divisors of n
+(numbers less than n which divide evenly into n).
+If d(a) = b and d(b) = a, where a ≠ b, then a and b are an 
+amicable pair and each of a and b are called amicable numbers.
+
+For example, the proper divisors of 220 
+are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110;
+therefore d(220) = 284. The proper divisors of 284 are 
+1, 2, 4, 71 and 142; so d(284) = 220.
+
+
+53. non_abundant_sums
+A perfect number is a number for which the sum of its 
+proper divisors is exactly equal to the number. For example, 
+the sum of the proper divisors of 28 would be 
+1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
+
+A number n is called deficient if the sum of its proper divisors
+is less than n and it is called abundant if this sum exceeds n.
+
+As 12 is the smallest abundant number, 
+1 + 2 + 3 + 4 + 6 = 16, the smallest number that can be 
+written as the sum of two abundant numbers is 24. 
+By mathematical analysis, it can be shown that all integers 
+greater than 28123 can be written as the sum of two abundant 
+numbers. 
+
+Find the sum of all the positive integers which cannot be 
+written as the sum of two abundant numbers.
+
+
+******************CODER_BYTE_EASY_PROBLEMS****************** 
+
+54. letter_changes
+Replace every letter in the string with the letter following
+it in the alphabet (ie. c becomes d, z becomes a). 
+Then capitalize every vowel in this new string and 
+finally return this modified string. 
+
+
+55. simple_symbols
+The str parameter will be composed of + and = symbols with 
+several letters between them (ie. ++d+===+c++==a) and for the 
+string to be true each letter must be surrounded by a + symbol. 
+So the string to the left would be false. The string will not 
+be empty and will have at least one letter. 
+
+
+56. ex_oh
+take the str parameter being passed and return the string true 
+if there is an equal number of x's and o's, otherwise return 
+the string false. Only these two letters will be entered in the 
+string, no punctuation or numbers. For example: if str is
+"xooxxxxooxo" then the output should return false because 
+there are 6 x's and 5 o's. 
+
+
+57. arith_geo
+take the array of numbers stored in arr and return the string
+"Arithmetic" if the sequence follows an arithmetic pattern or 
+return "Geometric" if it follows a geometric pattern. 
+If the sequence doesn't follow either pattern return -1. 
+An arithmetic sequence is one where the difference between each
+of the numbers is consistent, where as in a geometric sequence, 
+each term after the first is multiplied by some constant or 
+common ratio. Arithmetic example: [2, 4, 6, 8] and Geometric 
+example: [2, 6, 18, 54]. Negative numbers may be entered as 
+parameters, 0 will not be entered, and no array will contain 
+all the same elements. 
+
+
+58. array_addition
+take the array of numbers stored in arr and return the string 
+true if any combination of numbers in the array can be added up 
+to equal the largest number in the array, otherwise return the 
+string false. For example: if arr contains [4, 6, 23, 10, 1, 3] 
+the output should return true because 4 + 6 + 10 + 3 = 23. 
+The array will not be empty, will not contain all the same 
+elements, and may contain negative numbers.
+
+
+59. division_stringified(num1,num2)
+take both parameters being passed, divide num1 by num2, 
+and return the result as a string with properly formatted 
+commas. If an answer is only 3 digits long, return the number 
+with no commas (ie. 2 / 3 should output "1"). For example: 
+if num1 is 123456789 and num2 is 10000 the output should 
+be "12,345". 
+
+
+60. counting_minutes
+take the str parameter being passed which will be two times 
+(each properly formatted with a colon and am or pm) separated 
+by a hyphen and return the total number of minutes between 
+the two times. The time will be in a 12 hour clock format. 
+For example: if str is 9:00am-10:00am then the output should 
+be 60. If str is 1:00pm-11:00am the output should be 1320. 
+
+
+61. mean_mode
+MeanMode(arr) take the array of numbers stored in arr and 
+return 1 if the mode equals the mean, 0 if they don't equal 
+each other (ie. [5, 3, 3, 3, 1] should return 1 because the 
+mode (3) equals the mean (3)). The array will not be empty, 
+will only contain positive integers, and will not contain more 
+than one mode. 
+
+
+62. number_search
+take the str parameter, search for all the numbers in the 
+string, add them together, then return that final number. 
+For example: if str is "88Hello 3World!" the output should 
+be 91. You will have to differentiate between single digit 
+numbers and multiple digit numbers like in the example above. 
+So "55Hello" and "5Hello 5" should return two different answers.
+Each string will contain at least one letter or symbol. 
+
+
+63. additive_persistence
+take the num parameter being passed which will always be 
+a positive integer and return its additive persistence which 
+is the number of times you must add the digits in num until 
+you reach a single digit. For example: if num is 2718 then 
+your program should return 2 because 2 + 7 + 1 + 8 = 18 
+and 1 + 8 = 9 and you stop at 9.
+
+
+64. multiplicatie_persistence
+take the num parameter being passed which will always 
+be a positive integer and return its multiplicative 
+persistence which is the number of times you must multiply 
+the digits in num until you reach a single digit. For example: 
+if num is 39 then your program should return 3 because 
+3 * 9 = 27 then 2 * 7 = 14 and finally 1 * 4 = 4 and you stop 
+at 4.
+
+
+65. offline_minimum
+take the strArr parameter being passed which will be an array 
+of integers ranging from 1...n and the letter "E" and return 
+the correct subset based on the following rules. The input will 
+be in the following format: ["I","I","E","I",...,"E",...,"I"] 
+where the I's stand for integers and the E means take out the 
+smallest integer currently in the whole set. When finished, 
+your program should return that new set with integers separated 
+by commas. For example: if strArr is 
+["5","4","6","E","1","7","E","E","3","2"] then your program 
+should return 4,1,5. 
+
+
+************CODER_BYTE_MEDIUM_PROBLEMS**************
+
+
+66. run_length
+take the str parameter being passed and return a compressed 
+version of the string using the Run-length encoding algorithm. 
+This algorithm works by taking the occurrence of each repeating 
+character and outputting that number along with a single 
+character of the repeating sequence. For example: "wwwggopp" 
+would return 3w2g1o2p. 
+
+
+67. letter_count
+take the str parameter being passed and return the first word 
+with the greatest number of repeated letters. For example: 
+"Today, is the greatest day ever!" should return greatest 
+because it has 2 e's (and 2 t's) and it comes before ever 
+which also has 2 e's. If there are no words with repeating 
+letters return -1. 
+
+
+68. simple_mode
+take the array of numbers stored in arr and return the number 
+that appears most frequently (the mode). For example: if arr 
+contains [10, 4, 5, 2, 4] the output should be 4. If there is 
+more than one mode return the one that appeared in the array 
+first (ie. [5, 10, 10, 6, 5] should return 5 because it 
+appeared first). If there is no mode return -1.
+
+
+69. consecutive
+take the array of integers stored in arr and return the 
+minimum number of integers needed to make the contents of 
+arr consecutive from the lowest number to the highest number. 
+For example: If arr contains [4, 8, 6] then the output should 
+be 2 because two numbers need to be added to the array (5 and 7)
+to make it a consecutive array of numbers from 4 to 8. 
+Negative numbers may be entered as parameters and no array will 
+have less than 2 elements. 
+
+
+70. formatted_division
+take both parameters being passed, divide num1 by num2, and 
+return the result as a string with properly formatted commas 
+and 4 significant digits after the decimal place. For example: 
+if num1 is 123456789 and num2 is 10000 the output should be 
+"12,345.6789". The output must contain a number in the one's 
+place even if it is a zero. 
+
+
+71. permutation_step
+take the num parameter being passed and return the next number 
+greater than num using the same digits. For example: if num is 
+123 return 132, if it's 12453 return 12534. If a number has no 
+greater permutations, return -1 (ie. 999).
+
+
+72. prime_checker
+take num and return 1 if any arrangement of num comes out to be 
+a prime number, otherwise return 0. For example: if num is 910, 
+the output should be 1 because 910 can be arranged into 109 or 
+019, both of which are primes.
+
+
+73. dash_insert_two
+insert dashes ('-') between each two odd numbers and insert 
+asterisks ('*') between each two even numbers in str. 
+For example: if str is 4546793 the output should be 454*67-9-3. 
+Don't count zero as an odd or even number. 
+
+
+74. swap_two
+take the str parameter and swap the case of each character. 
+Then, if a letter is between two numbers (without separation), 
+switch the places of the two numbers. For example: if str is 
+"6Hello4 -8World, 7 yes3" the output should be 
+4hELLO6 -8wORLD, 7 YES3. 
+
+
+75. number_search
+take the str parameter, search for all the numbers in the string, 
+add them together, then return that final number divided by the 
+total amount of letters in the string. For example: if str is 
+"Hello6 9World 2, Nic8e D7ay!" the output should be 2. First if 
+you add up all the numbers, 6 + 9 + 2 + 8 + 7 you get 32. 
+Then there are 17 letters in the string. 32 / 17 = 1.882, and 
+the final answer should be rounded to the nearest whole number, 
+so the answer is 2. Only single digit numbers separated by 
+spaces will be used throughout the whole string (So this won't 
+ever be the case: hello44444 world). Each string will also have 
+at least one letter. 
+
+
+76. triple_double
+take both parameters being passed, and return 1 if there is a 
+straight triple of a number at any place in num1 and also a 
+straight double of the same number in num2. For example: 
+if num1 equals 451999277 and num2 equals 41177722899, then 
+return 1 because in the first parameter you have the straight 
+triple 999 and you have a straight double, 99, of the same 
+number in the second parameter. If this isn't the case, return 0. 
+
+
+77. bracket_matcher
+take the str parameter being passed and return 1 if the brackets 
+are correctly matched and each one is accounted for. Otherwise 
+return 0. For example: if str is "(hello (world))", then the 
+output should be 1, but if str is "((hello (world))" the the 
+output should be 0 because the brackets do not correctly match 
+up. Only "(" and ")" will be used as brackets. If str contains 
+no brackets return 1. 
+
+
+78. coin_determiner
+take the input, which will be an integer ranging from 1 to 250, 
+and return an integer output that will specify the least number 
+of coins, that when added, equal the input integer. Coins are 
+based on a system as follows: there are coins representing the 
+integers 1, 5, 7, 9, and 11. So for example: if num is 16, then 
+the output should be 2 because you can achieve the number 16 
+with the coins 9 and 7. If num is 25, then the output should be 
+3 because you can achieve 25 with either 11, 9, and 5 coins or 
+with 9, 9, and 7 coins.
+
+
+79. fib_checker
+return the string yes if the number given is part of the 
+Fibonacci sequence. This sequence is defined by: 
+Fn = Fn-1 + Fn-2, which means to find Fn you add the previous 
+two numbers up. The first two numbers are 0 and 1, then comes 1, 
+2, 3, 5 etc. If num is not in the Fibonacci sequence, return 
+the string no. 
+
+
+80. look_say_sequence
+take the num parameter being passed and return the next number 
+in the sequence according to the following rule: to generate 
+the next number in a sequence read off the digits of the given 
+number, counting the number of digits in groups of the same 
+digit. For example, the sequence beginning with 1 would be: 
+1, 11, 21, 1211, ... The 11 comes from there being "one 1" 
+before it and the 21 comes from there being "two 1's" before it.
+So your program should return the next number in the sequence 
+given num. 
+
+
+81. distinct_list
+take the array of numbers stored in arr and determine the total 
+number of duplicate entries. For example if the input is 
+[1, 2, 2, 2, 3] then your program should output 2 because there 
+are two duplicates of one of the elements. 
+
+
+**************CODING_TEST_TWO_PROBLEMS****************
+
+
+82. Ordered words
+Both Ruby and Python let you compare letters: "a" < "z" 
+returns true. Write a method, ordered_word?, which returns 
+whether the letters in a word occur in alphabetical order. 
+Assume the string contains only lowercase letters with no 
+spaces or punctuation.
+
+ordered_word?("amz") == true
+ordered_word?("zma") == false
+ordered_word?("aa") == true # repeats okay
+
+
+83. String encoding
+Write a method named encrypt(str) which takes in a string and 
+returns an array of pairs: each pair contains the next distinct 
+letter in the string, and the number consecutive repeats.
+
+encrypt("aaabbcbbaaa") ==
+  [["a", 3], ["b", 2], ["c", 1], ["b", 2], ["a", 3]]
+encrypt("aaaaaaaaaa") == [["a", 10]]
+encrypt("") == []
+Be careful! You don't just want the overall count of each letter: 
+encrypt("aaabbcbbaaa") != [["a", 6], ["b", 4], ["c", 1]]. So 
+make sure to count consecutive letters, not their overall count.
+
+Lastly, a common error is to forget to encrypt the last tokens. 
+Make sure that encrypt("aabbcc") == [["a", 2], ["b", 2], ["c", 2]], 
+not [["a", 2], ["b", 2]].
+
+
+84. Nearby words
+Write a method named one_off_words(str, word_list) which takes 
+in a string and an array of valid words (the word_list). It 
+should return an array of words from the word_list which are 
+the same except for a single letter at a single position.
+
+Do not return words of that differ in length from str.
+
+For instance, "boot" and "boom" are nearby (differ in 4th letter), 
+but "loot" and "tool" are not (differ in first and fourth 
+letters). Note that position matters.
+
+Here's an example of the method:
+
+WORDS = ["door", "moot", "boot", "boots"]
+one_off_words("moor", WORDS) == ["door", "moot"]
+You may assume that the input string and word list contain only 
+lower case letters.
+
+
+
+*********SORTING PROBLEMS**********************
+
+85. Insertion sort-swap
+
+
+86. Insertion sort-remove &insert
+
+
+87-88. Selection sort
+
+
+89. merge_sort
+
+
+
+*************MINI_CURRICULUM_PROBLEMS***************
+
+90. my_uniq
+Write your own uniq method, called my_uniq; it should take in 
+an Array and return a new array. It should not call uniq.
+
+
+91. towers_of_hanoi
+
+
+92. my_transpose
+convert between the row-oriented and column-oriented 
+representations.
+
+
+93. num_to_s(num,base)
+convert a number to a string in a different base. For instance, 
+num_to_s(123, 10) == "123" and num_to_s(4, 2) == 100. It should 
+work for bases up to 16 (hexadecimal).
+
+
+94. hash_offset
+Martha has created a hash with letter symbols as keys to 
+represent items that start with their keys. However, 
+she realized everything is off by one letter.
+
+wrong_hash = { :a => "banana", :b => "cabbage", 
+:c => "dental_floss", :d => "eel_sushi" }
+Write a program hash_correct that takes this wrong hash and 
+returns the correct one.
+
+
+95. median
+Write a method that finds the median of a given array of 
+integers. If the array has an odd number of integers, return 
+the middle item from the sorted array. If the array has an even 
+number of integers, return the average of the middle two items 
+from the sorted array.
+
+
+96. string_concat
+Create a method that takes in an Array of Strings and uses 
+inject to return the concatenation of the strings.
+
+
+97. substrings
+Write a method substrings that will take a String and return 
+an array containing each of its substrings. Example output: 
+substrings("cat") => ["c", "ca", "cat", "a", "at", "t"]
+
+
+98 rock_paper_scissors
+
+
+99. swingers
+Implement a Swingers game. The method swingers should take 
+an array of couple arrays and return the same type of data 
+structure, with the couples mixed up. Assume that the first 
+item in the couple array is a man, and the second item is a 
+woman. Don't pair a person with someone of their own gender 
+(sorry to ruin your fun).
+
+
+
+****************RECURSION_PROBLEMS****************
+
+100. binary_search
+
+
+101. fibonacci up to n
+
+
+102. rock_judger (recursion and iterative)
+determine the heaviest rock(largest number) in an array
+
+
+
+*****************CODING_TEST_ONE_PROBLEMS*************
+
+103. lucky_sevens?(numbers)
+
+
+104. oddball_sum(numbers)
+add all odd numbers
+
+
+105. disemvowel(string)
+remove all vowels
+
+
+
+*************RANDOM_PROBLEMS****************
+
+
+106. fizzbuzz
+
+107. capitalize
+
+108. perfect_squares
+
+109. division_without_dividing
+
+
